@@ -12,9 +12,11 @@ def main():
 	
 	while x < 4000000:
 		x = fibonacci(n)
+		if x >= 4000000:
+			break
 		even_fibonacci.append(x)
 		n = n + 3
-		# print(x)
+		
 	print(sum(even_fibonacci))
 		
 def fibonacci(n):
