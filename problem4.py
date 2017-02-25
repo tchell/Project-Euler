@@ -15,15 +15,21 @@ def main():
             # check if the product is a palindrome
             product_string = str(product)
             product_len = len(product_string)
+            # print(product_len)
+            for digit in range(0, product_len):
+                # print(digit)
                 # if a palindrome and larger than the previous, store it over the previous
+                if product_string[digit] == product_string[(product_len - 1) - digit]:
                     continue
                 else:
                     break
 
+                palindrome = product
 
             y += 1
 
         x += 1
 
+    print(palindrome)
 
 main()
